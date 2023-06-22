@@ -1,0 +1,609 @@
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 300px){
+  .tab {
+      overflow: hidden;
+      background-color: #f1f1f1;
+      max-width: 100%;
+  }
+    
+  .tab button {
+      background-color: inherit;
+      float: left;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      transition: 0.3s;
+      width: 22.5%;
+      text-align: center;
+  }
+    
+  .tab_logo_gif {
+      display: block;
+      height: 50px;
+      float: right;
+  }
+  
+  .tab button:hover {
+      background-color: #ddd;
+  }
+    
+  .tab button.active {
+      background-color: #ccc;
+  }
+    
+  .tabcontent {
+      display: none;
+      padding: 6px 12px;
+      border-top: none;
+  }
+  
+  .card {
+      /* Add shadows to create the "card" effect */
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      transition: 0.3s;
+      margin-left: 10.5%;
+      float: left;
+      margin-top: 40px;
+  
+    }
+    
+    /* On mouse-over, add a deeper shadow */
+    .card:hover {
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+    
+    /* Add some padding inside the card container */
+    .container {
+      padding: 2px 16px;
+    }
+  
+    .container {
+      overflow: hidden;
+    }
+  
+  .container button{
+    border : none;
+  }
+  
+    .filterDiv {
+      width: 100%;
+      float: left;
+      background-color: #2196F3;
+      color: #ffffff;
+      max-height: 100px;
+      padding: 10px;
+      line-height: 100px;
+      text-align: center;
+      font-size: 20px;
+      vertical-align: top;
+      margin: 2px;
+      display: none; /* Hidden by default */
+    }
+    
+    /* The "show" class is added to the filtered elements */
+    .show {
+      display: block;
+    }
+    
+    /* Style the buttons */
+    .btn {
+      border: none;
+      outline: none;
+      padding: 12px 16px;
+      background-color: #f1f1f1;
+      cursor: pointer;
+    }
+    
+    /* Add a light grey background on mouse-over */
+    .btn:hover {
+      background-color: #ddd;
+    }
+    
+    /* Add a dark background to the active button */
+    .btn.active {
+      background-color: #666;
+      color: white;
+    }
+  
+  
+    .tab {
+      overflow: hidden;
+      background-color: #f1f1f1;
+      max-width: 100%;
+  }
+    
+  .tab button {
+      background-color: inherit;
+      float: left;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 14px 16px;
+      transition: 0.3s;
+      font-size: 10px;
+      width: 20%;
+  }
+    
+  .tab_logo_gif {
+      display: block;
+      height: 50px;
+      float: right;
+  }
+  
+  .tab button:hover {
+      background-color: #ddd;
+  }
+    
+  .tab button.active {
+      background-color: #ccc;
+  }
+    
+  .tabcontent1 {
+      display: none;
+      padding: 6px 12px;
+      border-top: none;
+      font-size: large;
+  }
+  
+  
+  
+  #myInput {
+    background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+    background-position: 10px 12px; /* Position the search icon */
+    background-repeat: no-repeat; /* Do not repeat the icon image */
+    width: 100%; /* Full-width */
+    font-size: 10px; /* Increase font-size */
+    padding: 12px 20px 12px 40px; /* Add some padding */
+    border: 1px solid #ddd; /* Add a grey border */
+    margin-bottom: 12px; /* Add some space below the input */
+  }
+  
+  #myTable {
+    border-collapse: collapse; /* Collapse borders */
+    max-width: 100%; 
+    border: 1px solid #ddd; /* Add a grey border */
+    font-size: 7px; /* Increase font-size */
+  }
+  
+  #myTable th, #myTable td {
+    text-align: left; /* Left-align text */
+  }
+  
+  #myTable tr {
+    /* Add a bottom border to all table rows */
+    border-bottom: 1px solid #ddd;
+  }
+  
+  #myTable tr.header, #myTable tr:hover {
+    /* Add a grey background color to the table header and on hover */
+    background-color: #f1f1f1;
+  }
+  
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 450px){
+.tab {
+    overflow: hidden;
+    background-color: #f1f1f1;
+    max-width: 100%;
+}
+  
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    width: 22.5%;
+    text-align: center;
+    font-size: medium;
+}
+  
+.tab_logo_gif {
+    display: block;
+    height: 50px;
+    float: right;
+}
+
+.tab button:hover {
+    background-color: #ddd;
+}
+  
+.tab button.active {
+    background-color: #ccc;
+}
+  
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    margin-left: 10.5%;
+    float: left;
+    margin-top: 40px;
+
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  /* Add some padding inside the card container */
+  .container {
+    padding: 2px 16px;
+  }
+
+  .container {
+    overflow: hidden;
+  }
+
+.container button{
+  border : none;
+}
+
+  .filterDiv {
+    width: 100%;
+    float: left;
+    background-color: #2196F3;
+    color: #ffffff;
+    max-height: 100px;
+    padding: 10px;
+    line-height: 100px;
+    text-align: center;
+    font-size: 20px;
+    vertical-align: top;
+    margin: 2px;
+    display: none; /* Hidden by default */
+  }
+  
+  /* The "show" class is added to the filtered elements */
+  .show {
+    display: block;
+  }
+  
+  /* Style the buttons */
+  .btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+  }
+  
+  /* Add a light grey background on mouse-over */
+  .btn:hover {
+    background-color: #ddd;
+  }
+  
+  /* Add a dark background to the active button */
+  .btn.active {
+    background-color: #666;
+    color: white;
+  }
+
+
+  .tab {
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+  
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: larger;
+}
+  
+.tab_logo_gif {
+    display: block;
+    height: 50px;
+    float: right;
+}
+
+.tab button:hover {
+    background-color: #ddd;
+}
+  
+.tab button.active {
+    background-color: #ccc;
+}
+  
+.tabcontent1 {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+    font-size: large;
+}
+
+
+
+#myInput {
+  background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+  background-position: 10px 12px; /* Position the search icon */
+  background-repeat: no-repeat; /* Do not repeat the icon image */
+  width: 100%; /* Full-width */
+  font-size: 16px; /* Increase font-size */
+  padding: 12px 20px 12px 40px; /* Add some padding */
+  border: 1px solid #ddd; /* Add a grey border */
+  margin-bottom: 12px; /* Add some space below the input */
+}
+
+#myTable {
+  border-collapse: collapse; /* Collapse borders */
+  max-width: 100%; 
+  border: 1px solid #ddd; /* Add a grey border */
+  font-size: 18px; /* Increase font-size */
+}
+
+#myTable th, #myTable td {
+  text-align: left; /* Left-align text */
+  padding: 12px; /* Add padding */
+}
+
+#myTable tr {
+  /* Add a bottom border to all table rows */
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  /* Add a grey background color to the table header and on hover */
+  background-color: #f1f1f1;
+}
+}
+
+
+
+
+
+
+
+
+
+  @media screen and (min-width: 1024px){
+    .tab {
+        overflow: hidden;
+        background-color: #f1f1f1;
+    }
+      
+    .tab button {
+        background-color: inherit;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.3s;
+        font-size: larger;
+    }
+      
+    .tab_logo_gif {
+        display: block;
+        height: 50px;
+        float: right;
+    }
+    
+    .tab button:hover {
+        background-color: #ddd;
+    }
+      
+    .tab button.active {
+        background-color: #ccc;
+    }
+      
+    .tabcontent {
+        display: none;
+        padding: 6px 12px;
+        border-top: none;
+    }
+    
+    .card {
+        /* Add shadows to create the "card" effect */
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        margin-left: 10.5%;
+        float: left;
+        margin-top: 40px;
+    
+      }
+      
+      /* On mouse-over, add a deeper shadow */
+      .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+      }
+      
+      /* Add some padding inside the card container */
+      .container {
+        padding: 2px 16px;
+      }
+    
+      .container {
+        overflow: hidden;
+      }
+    
+    .container button{
+      border : none;
+    }
+    
+      .filterDiv {
+        width: 100%;
+        float: left;
+        background-color: #2196F3;
+        color: #ffffff;
+        max-height: 100px;
+        padding: 10px;
+        line-height: 100px;
+        text-align: center;
+        font-size: 20px;
+        vertical-align: top;
+        margin: 2px;
+        display: none; /* Hidden by default */
+      }
+      
+      /* The "show" class is added to the filtered elements */
+      .show {
+        display: block;
+      }
+      
+      /* Style the buttons */
+      .btn {
+        border: none;
+        outline: none;
+        padding: 12px 16px;
+        background-color: #f1f1f1;
+        cursor: pointer;
+      }
+      
+      /* Add a light grey background on mouse-over */
+      .btn:hover {
+        background-color: #ddd;
+      }
+      
+      /* Add a dark background to the active button */
+      .btn.active {
+        background-color: #666;
+        color: white;
+      }
+    
+    
+      .tab {
+        overflow: hidden;
+        background-color: #f1f1f1;
+    }
+      
+    .tab button {
+        background-color: inherit;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.3s;
+        font-size: larger;
+    }
+      
+    .tab_logo_gif {
+        display: block;
+        height: 50px;
+        float: right;
+    }
+    
+    .tab button:hover {
+        background-color: #ddd;
+    }
+      
+    .tab button.active {
+        background-color: #ccc;
+    }
+      
+    .tabcontent1 {
+        display: none;
+        padding: 6px 12px;
+        border-top: none;
+        font-size: large;
+    }
+    
+    
+    
+    #myInput {
+      background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+      background-position: 10px 12px; /* Position the search icon */
+      background-repeat: no-repeat; /* Do not repeat the icon image */
+      width: 100%; /* Full-width */
+      font-size: 16px; /* Increase font-size */
+      padding: 12px 20px 12px 40px; /* Add some padding */
+      border: 1px solid #ddd; /* Add a grey border */
+      margin-bottom: 12px; /* Add some space below the input */
+    }
+    
+    #myTable {
+      border-collapse: collapse; /* Collapse borders */
+      width: 100%; /* Full-width */
+      border: 1px solid #ddd; /* Add a grey border */
+      font-size: 18px; /* Increase font-size */
+    }
+    
+    #myTable th, #myTable td {
+      text-align: left; /* Left-align text */
+      padding: 12px; /* Add padding */
+    }
+    
+    #myTable tr {
+      /* Add a bottom border to all table rows */
+      border-bottom: 1px solid #ddd;
+    }
+    
+    #myTable tr.header, #myTable tr:hover {
+      /* Add a grey background color to the table header and on hover */
+      background-color: #f1f1f1;
+    }
+    
+  }

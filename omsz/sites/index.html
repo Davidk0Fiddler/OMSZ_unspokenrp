@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Medical Services</title>
+    <link rel="stylesheet" href="../style/index_style.css">
+    <script src="../scripts/index_nav_script.js"></script>
+    <script src="../scripts/index_dropdown_kiseg_script.js"></script>
+    <script src="../scripts/index_doc_table_script.js"></script>
+</head>
+<body>
+    <!-- Tab links -->
+  <div class="tab">
+    <button class="tablinks" onclick="openCity(event, 'London')">Tagok</button>
+    <button class="tablinks" onclick="openCity(event, 'Paris')">Oktató anyagok, kisegítés</button>
+    <button class="tablinks" onclick="openCity(event, 'Tokyo')">Iratok</button>
+    <button class="tablinks" onclick="openCity(event, 'Kse')">Készítő, segítség, egyéb</button>
+    <img src="../images/paramedic_logo.gif" class="tab_logo_gif">
+  </div>
+  
+
+
+
+
+
+
+
+
+
+
+
+  <div id="London" class="tabcontent tabcontent_london">
+    <div class="card">
+      <img src="../images/team_logo_example.png" alt="Avatar" style="width: 100%">
+      <div class="container">
+        <h4><b>John Doe</b></h4>
+        <p>Architect & Engineer</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="../images/team_logo_example.png" alt="Avatar" style="width: 100%">
+      <div class="container">
+        <h4><b>John Doe</b></h4>
+        <p>Architect & Engineer</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="../images/team_logo_example.png" alt="Avatar" style="width: 100%">
+      <div class="container">
+        <h4><b>John Doe</b></h4>
+        <p>Architect & Engineer</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="../images/team_logo_example.png" alt="Avatar" style="width: 100%">
+      <div class="container">
+        <h4><b>John Doe</b></h4>
+        <p>Architect & Engineer</p>
+      </div>
+    </div>
+
+    <br>
+
+    <div class="card">
+      <img src="../images/team_logo_example.png" alt="Avatar" style="width: 100%">
+      <div class="container">
+        <h4><b>John Doe</b></h4>
+        <p>Architect & Engineer</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="../images/team_logo_example.png" alt="Avatar" style="width: 100%">
+      <div class="container">
+        <h4><b>John Doe</b></h4>
+        <p>Architect & Engineer</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="../images/team_logo_example.png" alt="Avatar" style="width: 100%">
+      <div class="container">
+        <h4><b>John Doe</b></h4>
+        <p>Architect & Engineer</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="../images/team_logo_example.png" alt="Avatar" style="width: 100%">
+      <div class="container">
+        <h4><b>John Doe</b></h4>
+        <p>Architect & Engineer</p>
+      </div>
+    </div>
+  </div>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div id="Paris" class="tabcontent">
+    <h1 align="center"><u>Oktató anyagok, kisegítés</u></h1>
+    <!-- Control buttons -->
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Mutasdd mindet</button>
+  <button class="btn" onclick="filterSelection('a')"> Enyhe sérülések + alapellátások</button>
+  <button class="btn" onclick="filterSelection('b')"> Közepes sérülések</button>
+  <button class="btn" onclick="filterSelection('c')"> Súlyos sérülések</button>
+  <button class="btn" onclick="filterSelection('d')"> Fokozott orvosi beavatkozások</button>
+</div>
+
+<!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+<div class="container">
+  <button class="tablinks1 " onclick="openCity1(event, 'horzsolas')"><div class="filterDiv a">Horzsolás kezelése</div></button>
+  <button class="tablinks1" onclick="openCity1(event, 'ficam')"><div class="filterDiv a">Ficam kezelése</div></button>
+  <button class="tablinks1" onclick="openCity1(event, 'alapeletjel')"><div class="filterDiv a">Alap életjelek ellenőrzése</div></button>
+  <button class="tablinks1" onclick="openCity1(event, 'rautek')"><div class="filterDiv a">Kimentés járműből - Rautek féle műfogás</div></button>
+  <button class="tablinks1" onclick="openCity1(event, 'gyogyszer')"><div class="filterDiv a">Gyógyszerek</div></button>
+  <button class="tablinks1" onclick="openCity1(event, 'tores')"><div class="filterDiv b">Törés kezelése</div></button>
+  <button class="tablinks1" onclick="openCity1(event, 'vagas')"><div class="filterDiv b">Vágás kezelése</div></button>
+  <button class="tablinks1" onclick="openCity1(event, 'belsoverzes')"><div class="filterDiv c">Belső vérzés kezelése</div></button>
+  <button class="tablinks1" onclick="openCity1(event, 'nyilttores')"><div class="filterDiv c">Nyílt törés kezelése</div></button>
+  <button class="tablinks1" onclick="openCity1(event, 'gyomormosas')"><div class="filterDiv d">Gyomormosás</div></button>
+  <button class="tablinks1" onclick="openCity1(event, 'ptx')"><div class="filterDiv d">Légmell - PTX kezelése</div></button>
+  <button class="tablinks1" onclick="openCity1(event, 'szivinfarktus')"><div class="filterDiv d">Szívinfarktus kezelése</div></button>
+
+  <div id="horzsolas" class="tabcontent1">
+    <h3><u>Horzsolás kezelése</u></h3>
+    <p> A horzsolást a legkönyebb ellátni.</p>
+    <ol>
+      <li>A seb lefertőtlenítése betadinnal: Kivesz az esettáskából gézt, vattapamacsot és betadint. A betadin spray-el lefújja a sebet majd a pamaccsal végigtapogatja a területet.</li>
+      <br>
+      <li>A seb bekötése/eltakarása: Ezt a területtől függően lehet nagyobb tapasszal, vagy a kivett gézből levág egy kellő méretűt majd abból fedőkötést készít a seb köré.</li>
+    </ol>
+    <br>
+    <p><u>RP-sen leírva:</u></p>
+
+    <p>/me elővesz az esettáskából kellő mennyiségű gézt, vattapamacsot, betadin spray-t</p>
+    <p>/do lefertőtleníti a sebet</p>
+    <p>/do tiszta a seb?</p>
+    <p>(/do igen)</p>
+    <p>/me levág a gézből egy ideális darabot majd fedőkötést készít belőle</p>
+    <p>/do 1 réteg</p>
+    <p>/do 2 réteg</p> 
+    <p>/do 3 réteg</p> 
+    <p>/do bekötve</p>    
+  </div>
+
+
+  <div id="ficam" class="tabcontent1">
+      <h3><u>Ficam kezelése</u></h3>
+      <p>A ficamot is meglehetősen könnyű kezelni</p>
+      <p>Egyszerűen egy előre elkészített jégzacskót kell kivenni a mobil hűtőből és jegelni a területet.</p>
+      <p>Amennyiben a helyzet megkívánja illetve a páciens igényli, bokarögzítőt is feltehetünk.</p>
+      <br>
+
+      <p><u>RP-sen leírva:</u></p>
+      <p>/me elővesz egy csomag jeget a mobil hűtőből</p>
+      <p>/do nála</p>
+      <p>/me a ficam területére helyezi majd jegeli</p>
+      <p>/do rajta</p>
+<br>
+      <p>/me elővesz egy bokarögzítőt az elsősegélycsomagból</p>
+      <p>/do elővette</p>
+      <p>/me ráhelyezi a sérült területre</p>
+      <p>/do rajta</p>
+      <p>/me beállítja a szorosságát</p>
+      <p>/do beállította</p>
+  </div>
+
+
+  <div id="alapeletjel" class="tabcontent1">
+        <h3><u>Alap életjelek ellenőrzése</u></h3>
+        <p>A betegeket egy úgynevezett ABCDE séma szerint kell ellátni,
+           ami úgy működik, hogy nem megyünk tovább a következő betűre
+            amíg az előzőt meg nem csináltuk</p>
+        <br>
+        <br>
+        <p>A - Átjárható a légút?</p>
+        <br>
+        <p>Hátrahajtjuk a beteg fejét és meghallgatjuk a légzését. A normál légzés 2db/10s. Amennyiben beszédhangokat halluk tőle egyértelmű hogy van légzése és eszméleténél van.</p>
+        <p>Amennyiben eszméletlen behelyezünk az orrába és a szájába tubusokat, hogy ne essen össze a tónustalan garatfal. (Az izomnak van egy alapvető tartása még ha nyugalmi állapotban is van a páciens. Ha nincs magánál akkor nincs izomtónus.</p>
+        <br>
+        <p><u>RP-sen leírva:</u></p>
+        <br>
+        <p>/me hátrahajtja a beteg fejét</p>
+        <p>/do kész</p>
+        <p>/me a páciens szájához hajol</p>
+        <p>/me hallgatja hogy van-e légzés</p>
+        <p>/do van (akkor nem kell ezzel tovább csinálnunk semmit)</p>
+        <p>/do nincs</p>
+        <p>/me elővesz az esettáskából egy kis és egy nagyobb méretű tubust</p>
+        <p>/do nála van</p>
+        <p>/me behelyezi a kicsit a páciens orrába, a nagyot a páciens szájába</p>
+        <p>/do bent</p>
+        <br><br>
+        <p>B- Belégzés</p>
+        <br>
+        <p>Fonendoszkóppal meg hallgatjuk a tüdőt 2-2 pontban (tüdőcsúcson és tüdőbázison). Ha gyengül/gyengült a légzéshang akkor PTX áll fenn. Ha szörtyögő hangja van akkor szívókatéterrel kell kiszívni a légutakból.</p>
+        <br>
+        <p><u>RP-sen leírva:</u></p>
+        <br>
+        <p>/me felveszi a fonendoszkópot</p>
+        <p>/me meghalgatja a páciens tüdejét 2-2 ponton</p>
+        <p>/do mit érzékel? (normális, gyengyült, szörtyögő)</p>
+        <p>(Ha normál semmit sem kell tenni vele.)</p>
+        <p>(Ha gyengyült akkor a PTX kezelését kell elkezdeni.)</p>
+        <p>(Ha szörtyögő) /me előveszi a szívókatétert</p>
+        <p>/do Nála</p>
+        <p>/me letolja a torkán a katétert</p>
+        <p>/do lent</p>
+        <p>/me bekapcsolja a szivattyút</p>
+        <p>/do kiszívja a vizet</p>
+        <p>/do tiszták a járatok</p>
+        <p>/me kihúzza a katétert</p>
+        <p>/do kint</p>
+        <br><br>
+        <p>C - Keringés</p>
+        <br>
+        <p>Púlzus mérése pulzoximéterrel (normál érték 60-80/m), vérnyomás mérése (normál érték 80-129). Ha alacsony a vérnyomás, 500-1500ml közötti infúziót adunk neki. Ha magas a vérnyomás akkor Tensiomin-t. Ha az EKG kóros ritmust mutat akkor intravénásan Cordarone-t kell beadni a páciensnek.</p>
+        <br>
+        <p><u>RP-sen leírva:</u></p>
+        <br>
+        <p>/me felteszi a pulzixométert a páciens felkarjára, majd elindítja.</p>
+        <p>/do megy</p>
+        <p>(Ha gyenge a púlzus) /me bead egy glükózoldatos injekciót a páciensnek.</p>
+        <p>(Ha túl magas) /me bead egy Cordarone-t a páciensnek.</p>
+        <p>/do beadta</p>
+        <p>(Ha alacsony a vérnyomás) /me kiveszi a táskából a 750ml-es infúziót.</p>
+        <p>/do kivette</p>
+        <p>/me vénát keres</p>
+        <p>/do talál</p>
+        <p>/me beszúrja a branült</p>
+        <p>/do bent és folyik az infúzió</p>
+        <p>(Ha túl magas)</p>
+        <p>/me bead egy Tensiomin injekciót a páciensnek.</p>
+        <p>/do beadta.</p>
+        <br><br>
+        <p>D - Idegrendszer</p>
+        <br>
+        <p>Az Idegrendszer vizsgálatát gyorsan meglehet tenni, és legtöbbször nem sérülnek az idegrostok, így ez a legegyszerűbb része a kivizsgálásnak. Kétféle képpen lehet megvizsgálni az idegi állapotot. Egyik módja a pupilla vizsgálat. Egy gyenge zseblámpával a páciens szemébe világítunk. Amennyiben a pupilla rendesen összehúzódik abban az esetben nincs probléma. A második módja ennek a reflex vizsgálat. Egyszerű orr, könyökhajlat, térd piszkálás, illetve az utóbbin gumikalapács ütés. Ha a páciens rendesen reagál rájuk (Az orrához nyúl, megrezzen, mozgatja a végtagjait) akkor nincs probléma. Amennyiben a vizsgálat során nem normálisan viselkedik, magas szintű idegi orvosi ellátásra van szükség amit kizárólag tapasztalt magas rangú végezhet el!</p>
+        <br>
+        <p><u>RP-sen leírva:</u></p>
+        <br>
+        <p>/me elővesz egy kis gyenge zseblámpát</p>
+        <p>/do elővette</p>
+        <p>/me idegrendszeri vizsgálatot végez</p>
+        <br>
+        <p>/me megpiszkálja az orrát (vagy) /me megcsiklandozza a könyökhajlatban (vagy) /me elővesz egy kalapácsot majd óvatosan ráüt a térdre.</p>
+        <br><br>
+        <p>E - Egész beteg fizikai megvizsgálása.</p>
+        <br>
+        <p>Ennél a pontnál keresünk fizikai sérüléseket, vagypedig olyan sérüléseket amit külső tapintással is tökéletesen érzékelni tudunk.</p>
+        <br>
+        <p>Fej áttapintása </p>
+        <p>Nézz rá a kesztyűdre, ha az véres => fejsérülés</p>
+        <br>
+        <p>Nyak áttapintása</p>
+        <p>Duzzanat deformitás érezhető? Ha igen, akkor nyakrögzítő felhelyezése indokolt, valamint gerinchordágyra helyezés</p>
+        <br>
+        <p>Mellkas</p>
+        <p>Stabil? Instabil? Nyomogasd meg óvatosan a mellkas mindkét oldalát.</p>
+        <br>
+        <p>Has</p>
+        <p>Puha? Betapintható? Ha nem => valószínűleg belső vérzés</p>
+        <br>
+        <p>Medence</p>
+        <p>Két ujjadat tedd a csípőlapátokra, ha egyvonalban van akkor oké, ha nem, akkor medencesérült > medenceövet  rakunk fel rá.</p>
+        <br>
+        <p>Combcsont</p>
+        <p>Duzzanat deformitás van? Igen - húzósínt teszünk fel.</p>
+      </div>
+
+
+  <div id="rautek" class="tabcontent1">
+        <h3><u>Kimentés járműből - Rautek féle műfogás</u></h3>
+        <p>A rautek féle fogást akkor használjuk, amikor egy gépjárműben túlságosan sérült a páciens hogy elhagyja azt. Ilyenkor nekünk, rohammentősöknek kell kiszedniünk a kocsiból a legkevesebb sérüléssel és egyből a hordágyra rakni, mindezt kis idő alatt megtéve.</p> 
+        <br>
+        <p><u>RP-sen leírva:</u></p>
+        <br>
+        <p>/me megpróbálja kinyitni az autó ajtaját</p>
+        <p>/do sikerült? (Ha nem akkor valamivel felfeszítjük)</p>
+        <p>(Ellenőrizzük az alap életjeleket) </p>
+        <p>/me behajol majd ránéz a biztonsági övre</p>
+        <p>/do be van csatolva?(Ha igen, kicsatoljuk vagy elvágjuk.)</p>
+        <p>/me ellenrőzi a lábait</p>
+        <p>/do nincsenek beszorulva?</p>
+        <p>/me a sérült csípőlapátjainál megpróbálja 90°-al elfordítani</p>
+        <p>/do sikerül?</p>
+        <p>/me hátulról ráfog a sérült alkarjaira, majd a combjával és melkasával megtámasztva elkezdi kiemelni.</p>
+        <p>/do sikerül?</p>
+        <p>/me leengedi a földre/hordágyra</p>
+  </div>
+
+
+  <div id="gyogyszer" class="tabcontent1">
+        <h1>Gyógyszerek</h1>
+
+  </div>
+
+
+  <div id="tores" class="tabcontent1">
+        <h3><u>Törés kezelése</u></h3>
+      <br>
+      <p>Fontos hogy ez a kezelési eljárás a sima töréseknél (pl.: nem nyílt törés) használjuk.</p>
+      <p>A törés kezelése egyfajta sorrendben működik. Első feladatunk, hogy az eltőrt végtagot (amennyiben végtag) egy húzósínbe helyezzük. Ezt követi a beszállítás. Fokozzottan figyeljünk arra hogy zökkenőmentes és gyors beszállítás legyen, főleg ha nem végtagi törés történt! A Kórházban egy röntgent kell végezni. Egyértelműen a gép használata előtt eltávolítjuk a fémtárgyakat a pácienstől, illetve felhelyezzük az ólomköpenyt az ágyékra. (Kivéve ha ott történyt a törés). Miután megtörtént a vizsgálat, (Amennyiben nem súlyos) begipszeljük a végtagot. (Amennyiben súlyos, például szilánkok vannak a törés környékén) A műtőbe visszük ahol az operáció során eltávolítjuk a szilánkokat és összecsavarozzuk az eltávolodott csontokat. Ha a törés nem végtagi, feltétlenül fel kell hívni a figyelmet arra, hogy ne mozogjon az illető. Több hetes fekvést kell felírni majd visszahívni hetente röntgenre. Amennyiben a páciens kívánja a kórház biztosít neki pihenőszobát.</p>
+      <br>
+      <p><u>RP-sen leírva:</u></p>
+      <br>
+      <p>/me elővesz egy húzósínt</p>
+      <p>/me rögzíti vele a törött végtagot</p>
+      <p>/me megszorítja</p>
+      <p>/do nem mozdul el?</p>
+      <p>(/do nem)</p>
+
+      <br>
+      <p>/me áttapogatja a páciens ruházatát fémtárgyak után kutatva</p>
+      <p>/do milyen fémtárgyakat és hol talál?</p>
+      <p>/me elveszi és berakja egy dobozba a fémtárgyakat</p>
+    <p>/me ráhelyezi az ágyékára az ólomköpenyt</p>
+    <p>(Átmegyünk a kezelőszobába)</p>
+    <p>/me bekapcsolja a gépet</p>
+    <p>/do a gép zúg</p>
+    <p>/me elindítja a felvételt</p>
+    <p>/do folyamatban</p>
+    <p>/do a monitoron megjelenik a röntgenfelvétel</p>
+    <p>/me elemezi a képet</p>
+    <p>/do mit lát rajta? Látató törés? Hol?</p>
+    <br>
+    <p>(Amennyiben szilánkos törés történt)</p>
+    <p>/me áthelyezi egy tolóágyra a pácienset</p>
+    <p>/me átolja a műtőterembe</p>
+    <p>/me Előkészíti a műtéthez szükséges dolgokat.</p>
+    <p>/me felcsatol egy infúziót amiben a megfelelő típusú vér található.</p>
+    <p>/do fent</p>
+    <p>/me beszúrja a branült a páciens könyökhajlatába</p>
+    <p>/do bent</p>
+    <p>/me letakarja a páciens azon testrészeit ahol nem végez feladatot.</p>
+    <p>/me előveszi a gázmaszkot majd altatógázt adagol azon keresztül a páciensnek.</p>
+    <p>/do elaltatta</p>
+    <p>/me előveszi az orvosi szikét majd felnyitja a szilánkos területet</p>
+    <p>/me kiveszi a szilánkokat egy orvosi csipesszel, majd egy kis fémtálcára helyezi őket</p>
+    <p>/do kiszedte mindet</p>
+    <p>/me összecsavarozza a csontokat/p>
+    <p>/do összecsavarozta</p>
+    <br>
+    <p>A felnyitott területet össze kell varni. Viszont fontos tudni hogy ezt a varrástechnikát használjuk az összes varrásra szükséges esetben.</p>
+    <p>/me elővesz egy cérnát és egy tűt</p>
+    <p>/me befűzi</p>
+    <p>/me összehúzza a seb két szélét és elkezdi összevarni</p>
+    <p>/do 1-2-3-4-5-6-7-8-9-10 öltés</p>
+    <p>/me fedőkötést készít a varrás köré</p>
+    <p>/do 1-2-3 réteg</p>
+    <p>/do kész.</p> 
+
+    <p>/me elkészíti a gipszet</p>
+    <p>/me felhelyezi a gipszet a sérült területre</p>
+    <p>/do megköt a gipsz</p>
+    </div>
+
+
+  <div id="vagas" class="tabcontent1">
+        <h3>Vágás kezelése</h3>
+
+  </div>
+
+
+  <div id="belsoverzes" class="tabcontent1">
+        <h1>Belső vérzés kezelése</h1>
+
+  </div>
+
+
+  <div id="nyilttores" class="tabcontent1">
+        <h1>Nyílt törés kezelése</h1>
+
+  </div>
+
+
+  <div id="gyomormosas" class="tabcontent1">
+        <h1>Gyomormosás</h1>
+
+  </div>
+
+
+  <div id="ptx" class="tabcontent1">
+        <h1>Légmell - PTX kezelése</h1>
+
+  </div>
+
+  <div id="szivinfarktus" class="tabcontent1">
+        <h1>Szívinfarktus kezelése</h1>
+
+  </div>
+
+</div>
+  </div>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div id="Tokyo" class="tabcontent">
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Írja be a keresendő iktatószámot!">
+
+<table id="myTable">
+  <tr class="header">
+    <th style="width:20%; text-align: center;">Iktatószám</th>
+    <th style="width:10%; text-align: center;">Beteg azonosítószáma</th>
+    <th style="width:10%; text-align: center;">Orvos neve</th>
+    <th style="width:20%; text-align: center;">Számlázott összeg</th>
+    <th style="width:10%; text-align: center;">Társadalom biztosítás</th>
+    <th style="width:20%; text-align: center;">Kiállítási idő</th>
+    <th style="width:10%; text-align: center;">Dokumentum</th>
+  </tr>
+  <tr>
+    <td style="width:20%; text-align: center;">9215076690</td>
+    <td style="width:10%; text-align: center;">432453</td>
+    <td style="width:10%; text-align: center;">Dr. David Fiddler</td>
+    <td style="width:20%; text-align: center;">640 000 Ft</td>
+    <td style="width:10%; text-align: center;">Nem jogosult</td>
+    <td style="width:20%; text-align: center;">2023-06-21</td>
+    <td style="width:10%; text-align: center;">Letöltés</td> </tr>
+  </tr>
+  <tr>
+    <td style="width:20%; text-align: center;">9215076690</td>
+    <td style="width:10%; text-align: center;">432453</td>
+    <td style="width:10%; text-align: center;">Dr. David Fiddler</td>
+    <td style="width:20%; text-align: center;">640 000 Ft</td>
+    <td style="width:10%; text-align: center;">Nem jogosult</td>
+    <td style="width:20%; text-align: center;">2023-06-21</td>
+    <td style="width:10%; text-align: center;">Letöltés</td> </tr>
+  </tr>
+  <tr>
+    <td style="width:20%; text-align: center;">9215076690</td>
+    <td style="width:10%; text-align: center;">432453</td>
+    <td style="width:10%; text-align: center;">Dr. David Fiddler</td>
+    <td style="width:20%; text-align: center;">640 000 Ft</td>
+    <td style="width:10%; text-align: center;">Nem jogosult</td>
+    <td style="width:20%; text-align: center;">2023-06-21</td>
+    <td style="width:10%; text-align: center;">Letöltés</td> </tr>
+  </tr>
+  <tr>
+    <td style="width:20%; text-align: center;">9235076690</td>
+    <td style="width:10%; text-align: center;">432453</td>
+    <td style="width:10%; text-align: center;">Dr. David Fiddler</td>
+    <td style="width:20%; text-align: center;">640 000 Ft</td>
+    <td style="width:10%; text-align: center;">Nem jogosult</td>
+    <td style="width:20%; text-align: center;">2023-06-21</td>
+    <td style="width:10%; text-align: center;">Letöltés</td> </tr>
+  </tr>
+  <tr>
+    <td style="width:20%; text-align: center;">9225076690</td>
+    <td style="width:10%; text-align: center;">432453</td>
+    <td style="width:10%; text-align: center;">Dr. David Fiddler</td>
+    <td style="width:20%; text-align: center;">640 000 Ft</td>
+    <td style="width:10%; text-align: center;">Nem jogosult</td>
+    <td style="width:20%; text-align: center;">2023-06-21</td>
+    <td style="width:10%; text-align: center;">Letöltés</td> </tr>
+  </tr>
+  <tr>
+    <td style="width:20%; text-align: center;">9224076690</td>
+    <td style="width:10%; text-align: center;">432453</td>
+    <td style="width:10%; text-align: center;">Dr. David Fiddler</td>
+    <td style="width:20%; text-align: center;">640 000 Ft</td>
+    <td style="width:10%; text-align: center;">Nem jogosult</td>
+    <td style="width:20%; text-align: center;">2023-06-21</td>
+    <td style="width:10%; text-align: center;"><a href="../docs/zarojelentess.docx" download>Letöltés</a></td> </tr>
+  </tr>
+  </tr>
+</table>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div id="Kse" class="tabcontent">
+    <h1>A weboldalt készítette: Hegedüs Dávid</h1>
+  </div>
+</body>
+</html>
